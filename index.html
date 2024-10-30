@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appel Rapide</title>
     <style>
-      /* CSS de base pour la mise en page */
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f3f4f6;
-        font-family: Arial, sans-serif;
-      }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
 
-      .call-button {
-        padding: 15px 30px;
-        font-size: 18px;
-        color: #fff;
-        background-color: #28a745;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
+        .call-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
 
-      .call-button:hover {
-        background-color: #218838;
-      }
+        .call-button:hover {
+            background-color: #218838;
+        }
     </style>
-  </head>
-  <body>
-    <!-- Bouton d'appel -->
-    <button class="call-button" onclick="callNumber()">
-      Appeler le 697926026
-    </button>
+</head>
+<body>
 
-    <!-- JavaScript -->
-    <script>
-      function callNumber() {
-        // Utilisation de l'URI 'tel:' pour initier l'appel
-        window.location.href = "tel:*126#";
-      }
-    </script>
-  </body>
+    <!-- Bouton d'appel avec un lien direct -->
+    <a href="tel:+237697926026" class="call-button">Appeler le 697926026</a>
+
+</body>
 </html>
